@@ -154,7 +154,7 @@ class PaymentService
      *
      * @param string $orderId Unique order ID
      * @param float|int $amount Payment amount
-     * @param string $currency Currency code (e.g., 'USD', 'EUR')
+     * @param string $currency Currency code (e.g., 'YER', 'EUR')
      * @param string $orderType Order type (default: 'PayBill')
      * @return array<string, mixed> Transaction response
      * @throws JsonException

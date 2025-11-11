@@ -71,7 +71,7 @@ use Bas\LaravelPayment\Facades\BasPaymentFacade as BasPayment;
 // Initiate a payment transaction
 $orderId = 'ORDER_' . time();
 $amount = 100.00;
-$currency = 'SAR';
+$currency = 'YER';
 
 $payment = BasPayment::initiateTransaction($orderId, $amount, $currency);
 
@@ -130,7 +130,7 @@ Initiates a new payment transaction.
 **Parameters:**
 - `$orderId` (string): Unique order identifier
 - `$amount` (float): Payment amount
-- `$currency` (string): Currency code (e.g., 'SAR', 'USD')
+- `$currency` (string): Currency code (e.g., 'YER', 'USD')
 
 **Returns:** Array with transaction details including `trxToken`
 
@@ -191,7 +191,7 @@ class PaymentController extends Controller
             $amount = $request->input('amount');
             
             // Initiate transaction
-            $payment = BasPayment::initiateTransaction($orderId, $amount, 'SAR');
+            $payment = BasPayment::initiateTransaction($orderId, $amount, 'YER');
             
             if ($payment['status'] === 1 && $payment['code'] === '1111') {
                 // Store payment details in database
