@@ -1,0 +1,8 @@
+* text=auto
+
+*.md diff=markdown
+*.php diff=php
+
+/.gitattributes export-ignore
+/.gitignore export-ignore
+/.env.example export-ignore

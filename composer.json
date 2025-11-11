@@ -1,0 +1,34 @@
+{
+    "name": "basgate/laravel-payment-sdk",
+    "description": "Laravel Payment Gateway SDK for BAS Platform - API-only payment integration",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "bas superapp",
+        "bas",
+        "basgate"
+    ],
+    "authors": [
+        {
+            "name": "Ahmed Alshikh"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Bas\\LaravelPayment\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Bas\\LaravelPayment\\BasPaymentServiceProvider"
+            ],
+            "aliases": {
+                "BasPayment": "Bas\\LaravelPayment\\Facades\\BasPaymentFacade"
+            }
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}

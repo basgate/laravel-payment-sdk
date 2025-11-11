@@ -1,0 +1,16 @@
+/vendor
+/.git
+/.idea
+/.vscode
+.DS_Store
+.env
+.env.backup
+.phpunit.result.cache
+composer.lock
+phpunit.xml.bak
+/build
+/coverage
+*.cache
+*.log
+.php_cs.cache
+.php-cs-fixer.cache
