@@ -316,7 +316,7 @@ class PaymentService
         string $endpoint,
         array $data,
         array $options = [],
-        bool $token = true,
+        bool $token = false,
         string $method = 'POST'
     ): array {
         try {
